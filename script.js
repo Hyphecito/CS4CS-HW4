@@ -23,37 +23,7 @@ document.getElementById('graduateForm').addEventListener('submit', function (eve
   const lastName = document.getElementById('lastName').value;
   const matriculation = document.getElementById('matriculation').value;
   const feedback = document.getElementById('feedback').value.trim();
-
-  // Regex patterns
-  const namePattern = /^[A-Za-z]+$/; // Letters only
-  const matriculationPattern = /^[0-9]+$/; // Digits only
-
-  // Validate Name Fields
-  if (!namePattern.test(name)) {
-    alert("The 'Name' field must contain only letters.");
-    event.preventDefault();
-    return;
-  }
-
-  if (middleInitial && !namePattern.test(middleInitial)) {
-    alert("The 'M. Initial' field must contain only one letter.");
-    event.preventDefault();
-    return;
-  }
-
-  if (!namePattern.test(lastName)) {
-    alert("The 'Last Name' field must contain only letters.");
-    event.preventDefault();
-    return;
-  }
-
-  // Validate Matriculation
-  if (!matriculationPattern.test(matriculation)) {
-    alert("The 'Matriculation' field must contain only digits.");
-    event.preventDefault();
-    return;
-  }
-
+ 
   // Validate Feedback
   if (!feedback) {
     alert("The 'Feedback' field cannot be empty.");
