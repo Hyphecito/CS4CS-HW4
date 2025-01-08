@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 4</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Welcome to My Homepage</h1>
+  
+  <!-- Personal Info Section -->
+  <fieldset>
+    <legend>Personal Info</legend>
+    <form id="graduateForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" pattern="[A-Za-z]+" title="Only letters allowed" required />
+        
+        <label for="matriculation">Matriculation:</label>
+        <input type="text" id="matriculation" pattern="[0-9]+" title="Only digits allowed" required />
+      </div>
+
+      <div class="form-group">
+        <label for="mInitial">M. Initial:</label>
+        <input type="text" id="mInitial" pattern="[A-Za-z]" title="Only one letter allowed" required />
+        
+        <label for="semester">Semester:</label>
+        <input type="text" id="semester" required />
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" pattern="[A-Za-z]+" title="Only letters allowed" required />
+        
+        <label for="program">Program:</label>
+        <select id="program">
+          <option>Computer Science</option>
+          <option>Big Data</option>
+          <option>AI</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="country">I am from:</label>
+        <select id="country">
+          <option>Germany</option>
+          <option>Turkey</option>
+          <option>Other</option>
+        </select>
+
+        <label for="startDate">Started in:</label>
+        <input type="date" id="startDate" required />
+      </div>
+    </form>
+  </fieldset>
+
+  <!-- Graduate Program Info -->
+  <h2>I've heard this graduate program from:</h2>
+  <input type="checkbox" id="media" /> Media
+  <input type="checkbox" id="add" /> Add
+  <input type="checkbox" id="agency" /> Agency
+  <input type="checkbox" id="other" /> Other
+
+  <!-- Future Plans -->
+  <h2>When I finish my study, I will:</h2>
+  <input type="radio" name="future" id="return" /> Return to my country
+  <input type="radio" name="future" id="job" /> Find a job in Europe
+  <input type="radio" name="future" id="training" /> Do the practical training and then decide
+
+  <!-- Feedback Section -->
+  <div class="feedback-section">
+    <h2>Feedback for the Course:</h2>
+    <textarea id="feedback" rows="5" cols="50"></textarea>
+  </div>
+
+  <!-- SDLC Methodologies -->
+  <fieldset>
+    <legend>SDLC Methodologies</legend>
+    <p>I will write a paragraph for each methodology of 
+      <a href="https://www.geeksforgeeks.org/software-development-life-cycle-sdlc/">SDLC</a>. There are many of them but I will suggest a few. My suggestions and their reasons are as follows:</p>
+    <ul>
+      <li><strong>Waterfall:</strong> It is a simple and structured method, however it has limited feedback so may be risky for long projects. </li>
+      <li><strong>Incremental:</strong> Early to deliver key features and very flexible, however needs complex planning and may face integration problems.</li>
+      <li><strong>Spiral:</strong> Good risk management and good feedback possibility, however complex and costly.</li>
+    </ul>
+
+    <p>Among so many SDLC methodologies the ones that are in AGILE classification are better. Among AGILE SDLC Methods, I also have a few suggestions:</p>
+    <ul>
+      <li><strong>Scrum:</strong> Uses sprints which are meetings generally made bi-weekly. Good for changing requirements. </li>
+      <li><strong>Kanban:</strong> Good with visulazing tasks, focuses on continuous delivery.</li>
+      <li><strong>XP:</strong> Uses pair programming and frequent releases. Good for changing requirements.</li>
+    </ul>
+  </fieldset>
+
+  <!-- Course Details -->
+  <fieldset>
+    <legend>Course Details</legend>
+    <p>In the Software Development and Applications course of 
+      <a href="https://www.srh-berlin.de/en/">SRH Berlin</a>, we learned the followings:</p>
+    <ul>
+      <li>Coding in C.</li>
+      <li>Some data structures like linked list, arrays and structs</li>
+      <li>SDLC Methodologies.</li>
+      <li>HTML, CSS, JavaScript.</li>
+    </ul>
+  </fieldset>
+
+  <!-- CSS Usage -->
+  <fieldset>
+    <legend>CSS Usage</legend>
+    <p>I have used <a href="https://www.w3schools.com/css/">CSS</a> in this website and there are 3 ways to include CSS in a webpage as follows. </p>
+    <ul>
+      <li>Styling the look of the website</li>
+      <li>Creating better user interface.</li>
+      <li>Improve user experience by methods like adding date selection or restricting bad input.</li>
+    </ul>
+  </fieldset>
+
+  <!-- JavaScript Usage -->
+  <fieldset>
+    <legend>JavaScript Usage</legend>
+    <p>We also use <a href="https://www.w3schools.com/js/">JavaScript</a> in this webpage development. The main reasons are as follows.</p>
+    <ul>
+      <li>Validation of inputs.</li>
+      <li>Create better interactions</li>
+      <li>Handling dynamic content</li>
+    </ul>
+  </fieldset>
+
+  <!-- Declaration -->
+  <fieldset>
+    <legend>Declaration</legend>
+    <p>I have done this project myself and accept the consequences if found otherwise.</p>
+    <p>You can reach me at: <a href="mailto:berkekeskinler@sabanciuniv.edu">berkekeskinler@sabanciuniv.edu</a></p>
+  </fieldset>
+
+  <button type="submit" id="submitBtn">Submit</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

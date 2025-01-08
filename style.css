@@ -1,0 +1,97 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Heading Styles */
+h1, h2 {
+  color: #ff7f00;
+}
+
+/* Fieldset Styles */
+fieldset {
+  border: 2px solid #ff7f00;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #ff7f00;
+}
+
+/* General Input and Select Styles */
+input, select, textarea {
+  padding: 5px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Personal Info Section Input Widths */
+#graduateForm input[type="text"],
+#graduateForm input[type="date"],
+#graduateForm select {
+  width: 30%; /* Adjust the width of personal info fields */
+}
+
+/* Full-Width Textarea */
+textarea {
+  width: calc(100% - 10px);
+}
+
+/* Form Group Styles */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Label Styles */
+label {
+  margin-right: 10px;
+}
+
+/* Feedback Section */
+.feedback-section {
+  margin-top: 30px;
+  padding: 15px;
+  border: 2px solid #ff7f00;
+  background-color: #fff;
+}
+
+/* List Styles */
+ul, ol {
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+/* Link Styles */
+a {
+  color: #ff7f00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styles */
+button {
+  background-color: #ff7f00;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #e66c00;
+}
